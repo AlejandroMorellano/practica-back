@@ -15,6 +15,11 @@ public class AutomovilController {
     @Autowired
     private AutomovilService automovilService;
 
+    @GetMapping("/prueba")
+    public String checkHealth() {
+        return "La aplicación si jala";
+    }
+
     @GetMapping
     public List<Automovil> getAllAutomoviles() {
         return automovilService.getAllAutomoviles();
