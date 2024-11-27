@@ -15,6 +15,11 @@ public class AutomovilController {
     @Autowired
     private AutomovilService automovilService;
 
+    @RequestMapping("/cambia")
+    public ResponseEntity<String> someMethod() {
+        return ResponseEntity.ok("Funcionando");
+    }
+
     @GetMapping
     public List<Automovil> getAllAutomoviles() {
         return automovilService.getAllAutomoviles();
