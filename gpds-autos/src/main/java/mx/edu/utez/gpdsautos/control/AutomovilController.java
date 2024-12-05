@@ -17,7 +17,7 @@ public class AutomovilController {
 
     @GetMapping("/prueba")
     public String checkHealth() {
-        return "La aplicación si jala aaa";
+        return "Se modifico";
     }
 
     @GetMapping
